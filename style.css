@@ -117,6 +117,7 @@ button:hover {
 .contact {
   background-color: #fff5ee;
   width: 100%;
+  padding-top: 80px;
   height: 100vh;
 }
 .contact h2 {
