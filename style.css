@@ -453,15 +453,329 @@ width: 45%;
     font-size: 28px;
   }
 
+  nav {
+    height: auto;
+    padding: 10px 5px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+    padding: 4px 6px;
+    letter-spacing: 1px;
+  }
+
+  .layout {
+    height: auto;
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .img {
+    width: 260px;
+    height: 320px;
+  }
+
+  .aboutme {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .titel {
+    padding-top: 140px;
+  }
+
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+  }
+
   .projects,
-  .skills-page {
+  .skills-page,
+  .contact {
     padding: 120px 20px 60px;
   }
 
   .box {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .form-card,
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-group label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .form-group textarea {
+    margin-left: 0;
   }
 }
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  nav {
+    height: auto;
+    padding: 10px 5px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+    padding: 4px 6px;
+    letter-spacing: 1px;
+  }
+
+  .layout {
+    min-height: 100dvh;
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .img {
+    width: 260px;
+    height: 320px;
+  }
+
+  .aboutme {
+    min-height: 100dvh;
+    padding-bottom: 40px;
+  }
+
+  .titel {
+    padding-top: 140px;
+  }
+
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .projects,
+  .skills-page,
+  .contact {
+    padding: 120px 20px 60px;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-card,
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-group label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+
+  .form-group textarea {
+    margin-left: 0;
+  }
+
+  .skills-container {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/* responsive Design */
+
+@media (max-width: 768px) {
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  nav {
+    height: auto;
+    padding: 10px 5px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+    padding: 4px 6px;
+    letter-spacing: 1px;
+  }
+
+  .layout {
+    min-height: 100dvh;
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .img {
+    width: 260px;
+    height: 320px;
+  }
+
+  .aboutme {
+    min-height: 100dvh;
+    padding-bottom: 40px;
+  }
+
+  .titel {
+    padding-top: 140px;
+  }
+
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .projects,
+  .skills-page,
+  .contact {
+    padding: 120px 20px 60px;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-card,
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  /* Form nebeneinander */
+
+.form-group {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.form-group label {
+  width: 100px;
+  margin-bottom: 0;
+}
+
+.form-group input {
+  width: 100%;
+}
+
+.form-group textarea {
+  width: 100%;
+  margin-left: -8px; /* nach links ziehen */
+}
+
+/* Message nach oben */
+
+.form-group label[for="message"] {
+  margin-top: -4px;
+}
+
+  .skills-container {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+
+  nav ul {
+    gap: 6px;
+  }
+
+  nav ul li a {
+    font-size: 11px;
+    padding: 4px 5px;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
+
+  .img {
+    width: 220px;
+    height: 280px;
+  }
+
+  .titel {
+    padding-top: 130px;
+  }
+
+  .content {
+    font-size: 16px;
+    width: 92%;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .project-card,
+  .form-card,
+  .card,
+  .skills-container {
+    width: 95%;
+  }
+}
+
+/* Tablet / Desktop */
 
 @media (min-width: 600px) {
   .content {
